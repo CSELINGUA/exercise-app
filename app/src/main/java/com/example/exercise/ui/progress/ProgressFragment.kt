@@ -22,14 +22,14 @@ class ProgressFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val ProgressViewModel =
+        val progressViewModel =
             ViewModelProvider(this).get(ProgressViewModel::class.java)
 
         _binding = FragmentProgressBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textProgress
-        ProgressViewModel.text.observe(viewLifecycleOwner) {
+        progressViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

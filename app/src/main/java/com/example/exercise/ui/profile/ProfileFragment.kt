@@ -3,7 +3,6 @@ package com.example.exercise.ui.profile
 
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.location.Address
 import android.location.Geocoder
 import android.location.Location
 import android.os.Build
@@ -12,19 +11,14 @@ import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Switch
-import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.exercise.MainActivity2
 import com.example.exercise.databinding.FragmentProfileBinding
 import com.example.exercise.ui.coach.ProfileViewModel
 import com.google.android.gms.location.*
 import kotlinx.android.synthetic.main.fragment_profile.*
-import kotlinx.android.synthetic.main.user_card_view.*
-import java.util.jar.Manifest
 
 
 class ProfileFragment : Fragment() {
